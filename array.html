@@ -1,0 +1,86 @@
+<html>
+    <head>
+    <title>embeded</title>
+    
+</head>
+<body>
+    <h1>Arrays:-</h1>
+    Arrays in C can be defined as a method of clubbing multiple entities of similar type into a larger group. These entities or elements can be of int, float, char, or double data type or can be of user-defined data types too like structures. However, in order to be stored together in a single array, all the elements should be of the same data type.  The elements are stored from left to right with the left-most index being the 0th index and the rightmost index being the (n-1) index.<br>
+    <h2>Types Of Arrays:</h2>
+    Arrays are of two types: <br>i) Single dimensional arrays<br>ii) Multidimensional arrays.
+<h2>Single Dimensional Arrays:</h2>Single dimensional array or 1-D array is the simplest form of arrays that can be found in C. This type of array consists of elements of similar types and these elements can be accessed through their indices.<br>
+ <h2>Multi-Dimensional Arrays:</h2>The most common type of multi-dimensional array that is used in the C language is a 2-D array. However, the number of dimensions can be more than 2 depending upon the compiler of the user’s system. These arrays consist of elements that are array themselves.<br>
+<h2>Syntax For Multi-Dimensional Array:</h2> data_type array_name[size1][size2]....[sizeN];<br>
+data_type: Type of data to be stored in the array.<br>
+array_name: Name of the array.<br>
+size1, size2,…, sizeN: Size of each dimension.
+<h2>Examples:</h2>
+
+<h3>Two dimensional array:</h3>int two_d[10][20];
+
+<h3>Three dimensional array:</h3>int three_d[10][20][30];
+<h2>Two-Dimensional Array (Important):</h2>
+A two-dimensional array or 2D array in C is the simplest form of the multidimensional array. We can visualize a two-dimensional array as an array of one-dimensional arrays arranged one over another forming a table with ‘x’ rows and ‘y’ columns where the row number ranges from 0 to (x-1) and the column number ranges from 0 to (y-1).
+<h2>Declaration of Two-Dimensional Array:</h2>
+The basic form of declaring a 2D array with x rows and y columns in C is shown below.
+<h3>
+Syntax:
+</h3>
+data_type array_name[x][y];<br>
+where,
+<br>
+data_type: Type of data to be stored in each element.
+array_name: name of the array. <br>
+x: Number of rows.<br>
+y: Number of columns.<br>
+We can declare a two-dimensional integer array say ‘x’ with 10 rows and 20 columns as:
+<h2>
+Example:
+</h2>
+int x[10][20];
+<h2>
+ Initialization of 2D array using Initializer List:</h2>
+We can initialize a 2D array in C by using an initializer list as shown in the example below.
+<h3>
+First Method :</h3>
+
+int x[3][4] = {0, 1 ,2 ,3 ,4 , 5 , 6 , 7 , 8 , 9 , 10 , 11};<br>
+The above array has 3 rows and 4 columns. The elements in the braces from left to right are stored in the table also from left to right. The elements will be filled in the array in order: the first 4 elements from the left will be filled in the first row, the next 4 elements in the second row, and so on.
+<h3>
+Second Method (better):
+</h3>
+int x[3][4] = {{0,1,2,3}, {4,5,6,7}, {8,9,10,11}};<br>
+This type of initialization makes use of nested braces. Each set of inner braces represents one row. In the above example, there is a total of three rows so there are three sets of inner braces. The advantage of this method is that it is easier to understand.
+
+<h2>Size of Multidimensional Arrays:</h2>
+The total number of elements that can be stored in a multidimensional array can be calculated by multiplying the size of all the dimensions.
+<h3>For example:</h3>
+
+The array int x[10][20] can store total (10*20) = 200 elements.<br>
+Similarly array int x[5][10][20] can store total (5*10*20) = 1000 elements.<br>
+To get the size of the array in bytes, we multiply the size of a single element with the total number of elements in the array.
+<h3>For example:</h3>
+
+Size of array int x[10][20] = 10 * 20 * 2 = 400 bytes.  <br>(where int = 2 bytes)(Based On Compilers)<br>
+Similarly, size of int x[5][10][20] = 5 * 10 * 20 * 2 = 2000 bytes.      (where int = 2 bytes) (Based On Compilers)
+ <h2>Declaration and Initialization of Array:</h2>
+There are various ways in which an array can be declared and initialized in various ways. You can declare an array of any data type (i.e. int, float, double, char) in C. The following ways can be used to declare and initialize an array. <br>
+
+Array Declaration by Specifying the Size
+Arrays can be declared by specifying the size or the number of array elements. The size of the array specifies the maximum number of elements that the array can hold. In the latest version of C, you can either declare an array by simply specifying the size at the time of the declaration or you can provide a user-specified size. The following syntax can be used to declare an array simply by specifying its size.
+<br>When an array is declared without allocating any value, then it stores a garbage value. If you access any uninitialized array value, then just like any uninitialized variable, it will give you a garbage value.a
+<h2>Advantages of Array:</h2>
+Arrays have a great significance in the C language. They provide several advantages to the programmers while programming. Some of them are:<br
+
+i)Arrays make the code more optimized and clean since we can store multiple elements in a single array at once, so we do not have to write or initialize them multiple times.
+ii)Every element can be traversed in an array using a single loop.
+iii)Arrays make sorting much easier. Elements can be sorted by writing a few lines of code.<br><h2>Disadvantages of Array:</h2>
+Every advantageous thing comes with some disadvantages as well. This stands true for arrays as well. Below are some of the disadvantages of the array in C:<br>
+
+i)Accessing an array out of bounds: The first disadvantage of arrays is that they are statically allocated. This means that once their size is initialized, it can not be increased or decreased.
+<h2>To Know More, Refer To This..</h2>
+<div classes="click" style="text-align:center;">
+<a  href="https://www.geeksforgeeks.org/calculation-of-address-of-element-of-1-d-2-d-and-3-d-using-row-major-and-column-major-order/amp/">Click Here</a>
+</div>
+</body>
+</html>
